@@ -1,0 +1,43 @@
+.loginAdminForm{
+    text-align: center;
+    &__button{
+        border: none;
+        background-color: $color-greekblue-8;
+        padding: 5px 20px;
+        border-radius: 5px;
+        font-weight: 500;
+        color: #000;
+        margin-top: 15px;
+        transition: all 0.5s;
+        &:hover{
+            background-color: $color-greekblue-9;
+        }
+    }
+    &__title{
+        margin-bottom: 10px;
+        font-weight: 700;
+        color: $color-greekblue-8;
+    }
+    &__content{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        border: 1px solid black;
+        padding: 50px;
+        border-radius: 10px;
+       
+    }
+    &__picture{
+        img{
+            width: 100%;
+        }
+    }
+    input{
+        margin-bottom: 7px;
+        border-radius: 5px;
+    }
+    .errorMessage{
+        margin-bottom: 10px;
+    }
+}

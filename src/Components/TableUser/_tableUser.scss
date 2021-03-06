@@ -1,0 +1,11 @@
+.tableUser{
+    &__table{
+        margin: 20px auto;
+        width: 90%;
+    }
+    &__pagination{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

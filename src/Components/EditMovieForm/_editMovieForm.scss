@@ -1,0 +1,30 @@
+.editMovieForm{
+    text-align: center;
+    height: 600px;
+    width: 100%;
+    &__content{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    &__title{
+        font-weight: 700;
+        color: $color-greekblue-5;
+        font-size: 40px;
+    }
+    &__button{
+        background-color: $color-pink-1;
+        padding: 5px 20px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+    input{
+        border-radius: 5px;
+    }
+    textarea{
+        width: 100%;
+        border-radius: 5px;
+    }
+}

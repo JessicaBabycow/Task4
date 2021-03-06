@@ -1,0 +1,44 @@
+
+.slick-slider{
+    // width: 80%;
+    margin: 0 auto;
+    padding-left: 60px;
+}
+.slick-prev:before{
+    color: #65b7f3;
+    font-size: 30px;
+}
+  .slick-next:before{
+    color: #65b7f3;
+    font-size: 30px;
+}
+  .slick-slide{
+    text-align: center;
+}
+
+.homePage{
+  &__carouselSlider{
+    padding-top: 80px;
+  }
+  &__component{
+    margin-top: 70px;
+    &:last-child{
+      margin-bottom: 70px;
+    }
+  }
+  &__backToTop{
+   position: fixed;
+   bottom: 50px;
+   right: 50px;
+   z-index: 1000;
+   &__icon{
+     width: 40px;
+     height: 40px;
+     color: white;
+     transition: all 0.5s;
+     &:hover{
+       color: $color-greekblue-9;
+     }
+   }
+  }
+}

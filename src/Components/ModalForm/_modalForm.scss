@@ -1,0 +1,36 @@
+.modalForm{
+    .dropdown-toggle{
+        background-color: $color-greekblue-7 !important;
+        transition: all 0.5s;
+        border: none;
+        &:hover{
+            background-color: $color-greekblue-8 !important;
+        }
+        &:focus{
+            box-shadow: none !important;  
+            border-color: none;
+        }
+    }
+    &__link{
+        &:hover{
+            text-decoration: none;
+        }
+    }
+  
+}
+.modal-header{
+    padding: 0;
+    border-bottom: none !important;
+    .close{
+        border: 2px solid white;
+        padding: 10px;
+        border-radius: 50%;
+        color: white;
+        background-color: $color-greekblue-2;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        opacity: 1;
+        transition: all 0.5s;
+    }
+}

@@ -1,0 +1,37 @@
+.pageNotFound{
+    text-align: center;
+    img{
+        width: 500px;
+    }
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h1{
+            font-size: 2.5rem;
+        }
+        &__message{
+            font-size: 1.2rem;
+            padding: 20px;
+            text-align: center;
+            width: 60%;
+        }
+        &__link{
+            background: #B163FF;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding: 12px;
+            color: #fff;
+            cursor: pointer;
+            &:hover{
+                background: #C463FF;
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+        &__copyRights{
+            margin-top: 15px;
+        }
+    }
+}

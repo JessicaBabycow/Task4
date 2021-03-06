@@ -1,0 +1,7 @@
+.detailPage{
+    &__component{
+        &:first-child{
+            padding-top: 150px;
+        }
+    }
+}

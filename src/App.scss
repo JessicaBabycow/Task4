@@ -1,0 +1,72 @@
+// Variables
+@import "./Helper/variables";
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat",sans-serif;
+  input{
+    width: 300px;
+    padding: 5px;
+    border: 1px solid $color-greekblue-5;
+  }
+  label{
+    font-size: 25px;
+    margin-right: 5px;
+    color: $color-greekblue-1;
+    font-weight: 700;
+  }
+  .errorMessage{
+    color: $color-pink-3;
+  }
+}
+
+.homeLayout{
+  background-color: $color-greekblue-1
+}
+
+// Components
+@import "./Components/HeaderHome/headerHome";
+@import "./Components/HeaderAdmin/headerAdmin";
+@import "./Components/Loader/loader";
+@import "./Containers/PageNotFound/pageNotFound";
+@import "./Components/FooterHome/footerHome";
+@import "./Components/TabsHomePage/tabsHomePage";
+@import "./Components/TabsDetailPage/tabsDetailPage";
+@import "./Components/MovieCard/movieCard";
+@import "./Containers/HomeTemplate/BookingPage/bookingPage";
+@import "./Containers/HomeTemplate/DetailPage/detailPage";
+@import "./Components//DetailMovie/detailMovie";
+@import "./Components/SeatList/seatList";
+@import "./Components/BookingMovieDetail/bookingMovieDetail";
+@import "./Components/TableMovie/tableMovie";
+@import "./Containers/AdminTemplate/Dashboard/dashboard";
+@import "./Components/TableUser/tableUser";
+@import "./Containers/AdminTemplate/UserManagement/userManagement";
+@import "./Components/ModalForm/modalForm";
+@import "./Components/LoginUserForm/loginUserForm";
+@import "./Components/SignUpUserForm/signUpUserForm";
+@import "./Containers/AdminTemplate/AuthPage/authPage";
+@import "./Components/EditMovieForm/editMovieForm";
+@import "./Components/AddMovieForm/addMovieForm";
+@import "./Components/RoomMovieForm/roomMovieForm";
+@import "./Components/AddUserForm/addUserForm";
+@import "./Components/EditUserForm/editUserForm";
+@import "./Components/FooterAdmin/footerAdmin";
+@import "./Components/CarouselSlider/carouselSlider";
+@import "./Components/ModalVideo/modalVideo";
+@import "./Components/News/news";
+@import "./Components/DetailMovieBottom/detailMovieBottom";
+@import "./Containers/HomeTemplate/UserPage/userPage";
+@import "./Containers/AdminTemplate/AdminPage/adminPage";
+@import "./Components/SearchHome/searchHome";
+
+@import "../node_modules/slick-carousel/slick/slick-theme.scss";
+@import "../node_modules/slick-carousel/slick/slick.scss";
+
+@import "./Containers/HomeTemplate/HomePage/homePage";
+
+//Test Page
+@import "./Containers/HomeTemplate/Test/test"
+

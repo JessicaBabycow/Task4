@@ -1,0 +1,33 @@
+.signUpUserForm{
+    height: 650px;
+    width: 800px;
+    text-align: center;
+    &__button{
+        border: none;
+        background-color: $color-pink-1;
+        padding: 5px 20px;
+        border-radius: 5px;
+        font-weight: 500;
+        color: #000;
+        margin-top: 20px;
+        &:hover{
+            background-color: $color-pink-2;
+        }
+    }
+    &__title{
+        margin-bottom: 5px;
+        font-weight: 700;
+        color: $color-pink-1;
+    }
+    &__content{
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%,-40%);
+    }
+    p{
+        margin-bottom: 0;
+        font-size: 20px;
+        color: $color-greekblue-1;
+    }
+}

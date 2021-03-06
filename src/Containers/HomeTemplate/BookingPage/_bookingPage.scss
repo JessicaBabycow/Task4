@@ -1,0 +1,14 @@
+.bookingPage{
+    padding-top: 100px;
+    margin-bottom: 50px;
+    h2{
+        color: #fff;
+        font-weight: 700;
+    }
+    &__time{
+        margin-left: 10px;
+        font-size: 35px;
+        font-weight: 700;
+        color: $color-pink-1;
+    }
+}

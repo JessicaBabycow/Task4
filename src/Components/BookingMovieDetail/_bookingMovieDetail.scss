@@ -1,0 +1,46 @@
+.bookingMovieDetail{
+    &__content{
+        display: flex;
+        img{
+            width: 150px;
+            border-radius: 5px;
+            height: 220px;
+        }
+        &__name{
+            color: $color-greekblue-10;
+            margin: 10px 0 0 10px;
+            h4{
+                font-weight: 700;
+            }
+        }
+    }
+    &__table{
+        color: $color-greekblue-1;
+        background-color: #fff;
+        width: 300px;
+        border-radius: 10px;
+        margin-top: 10px;
+        th{
+            width: 100%;
+            border: 1px solid $color-greekblue-1;
+            padding: 10px 20px;
+        }
+        td{
+            border: 1px solid $color-greekblue-1;
+            padding: 10px 20px;
+        }
+        tfoot{
+            color: $color-pink-1;
+            font-weight: 700;
+        }
+    }
+    &__button{
+        background-color: $color-pink-1;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin: 10px 0;
+        width: 300px;
+        font-weight: 500;
+    }
+}

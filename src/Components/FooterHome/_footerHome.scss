@@ -1,0 +1,107 @@
+.footerHome{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px;
+    color: #fff;
+    background-color: #011c39;
+    h2{
+        font-weight: 600;
+        font-size: 17px;
+    }
+    ul{
+        list-style: none;
+        padding-left: 0;
+    }
+    li{
+        line-height: 2em;
+    }
+    a{
+        text-decoration: none;
+    }
+    &>*{
+        flex: 1 100%;
+    }
+    &__left{
+        margin-right: 1.25em;
+        margin-bottom: 2em;
+        img{
+            width: 50%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        p{
+            padding-right: 20%;
+            color: #999;
+        }
+        .socials{
+            a{
+                background: #364a62;
+                width: 40px;
+                height: 40px;
+                display: inline-block;           
+                margin-right: 10px; 
+                border-radius: 50%;
+                transition: all 0.5s;
+                &:hover{
+                    background: $color-greekblue-8;
+                }
+            }
+            &__icon{
+                color: #e7f2f4;
+                font-size: 20px;
+                margin: 10px;
+            }
+        }
+    }
+    &__right{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-flow: row wrap; 
+        &>*{
+            flex: 1 50%;
+            margin-right: 1.25em;
+        }
+    }
+    .box{
+        a{
+            color: #999;
+            transition: all 0.5s;
+            &:hover{
+                text-decoration: none;
+                color: $color-greekblue-10;
+            }
+        }
+    }
+    &__bottom{
+        text-align: center;
+        color: #999;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (min-width:600px){
+    .footerHome{
+        &__right{
+            flex: 2 0px;
+            &>*{
+                flex: 1;
+            }
+        }
+        &__left{
+            flex: 1 0px;
+        }
+    }
+}
+
+@media screen and (max-width:600px){
+    .footerHome{
+        padding: 15px;
+    }
+}
