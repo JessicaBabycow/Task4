@@ -54,3 +54,15 @@
     }
   }
 }
+
+@media only screen and (max-width:380px){
+  .slick-slider{
+    margin: 0 auto;
+    padding-left: 10px;
+}
+  .homePage{
+    &__carouselSlider{
+      padding-top: 80px;
+    }
+  }
+}

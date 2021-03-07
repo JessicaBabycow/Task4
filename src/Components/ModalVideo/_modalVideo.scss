@@ -21,3 +21,18 @@
         transform: translate(-4%,-4%);
     }
 }
+
+@media only screen and (max-width:380px){
+    .react-player{
+        width: 300px !important;
+        height: 180px !important;
+    }
+    .modal-video{
+        width: 340px !important;
+        height: 200px !important;
+        position: absolute;
+        top: 4%;
+        left: 4%;
+        transform: translate(-4%,-4%);
+    }
+}
