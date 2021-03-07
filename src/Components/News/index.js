@@ -20,7 +20,7 @@ function News() {
   };
   return (
     <div className="news row">
-      <div className="news__hallOfFame col-3">
+      <div className="news__hallOfFame col-xs-12 col-lg-3">
         <p className="news__title">Hall Of Fame</p>
         <p className="news__content">Top actors</p>
         {actors.map((item, index) => {
@@ -49,7 +49,7 @@ function News() {
           );
         })}
       </div>
-      <div className="news__news col-9">
+      <div className="news__news col-xs-12 col-lg-9">
         <div className="news__top">
           <p className="news__title">News</p>
           <div className="news__icon">
@@ -78,7 +78,7 @@ function News() {
             <div className="col-5">
               <img className="news__news__big" src={news[0].img} />
             </div>
-            <div className="news__news__bigContent col-7">
+            <div className="news__news__bigContent col-xs-12 col-lg-7">
               <p>2 Hours Ago - by Yoga</p>
               <a href="https://www.glamorous.com/" target="_blank">
                 {news[0].title}
@@ -87,21 +87,21 @@ function News() {
             </div>
           </div>
           <div className="row" style={{ marginTop: "10px" }}>
-            <div className="news__news__smallContent col-4">
+            <div className="news__news__smallContent col-xs-12 col-lg-4">
               <img className="news__news__small" src={news[1].img} />
               <p>2 Hours Ago - by Yoga</p>
               <a href="https://www.glamorous.com/" target="_blank">
                 {news[1].title}
               </a>
             </div>
-            <div className="news__news__smallContent col-4">
+            <div className="news__news__smallContent col-xs-12 col-lg-4">
               <img className="news__news__small" src={news[2].img} />
               <p>2 Hours Ago - by Yoga</p>
               <a href="https://www.glamorous.com/" target="_blank">
                 {news[2].title}
               </a>
             </div>
-            <div className="news__news__smallContent col-4">
+            <div className="news__news__smallContent col-xs-12 col-lg-4">
               <img className="news__news__small" src={news[3].img} />
               <p>2 Hours Ago - by Yoga</p>
               <a href="https://www.glamorous.com/" target="_blank">

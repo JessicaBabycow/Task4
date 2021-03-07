@@ -12,6 +12,7 @@ const ModalVideo = (props) => {
         isOpen={modalVideo}
         toggle={setModalVideo}
         style={{ backgroundColor: "black" }}
+        className="modal-video"
       >
         <ModalHeader
           toggle={setModalVideo}
@@ -26,8 +27,9 @@ const ModalVideo = (props) => {
           }}
         >
           <ReactPlayer
-            width="480px"
-            height="240px"
+            // width="480px"
+            // height="240px"
+            className="react-player"
             controls
             playing={true}
             loop={true}

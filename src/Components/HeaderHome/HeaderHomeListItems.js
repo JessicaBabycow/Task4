@@ -19,9 +19,9 @@ export const HeaderHomeListItems = [
     url: "contact",
     cName: "headerHome__links",
   },
-  {
-    title: "Login or Register",
-    url: "#",
-    cName: "headerHome__linksMobile",
-  },
+  // {
+  //   title: "Login or Register",
+  //   url: "#",
+  //   cName: "headerHome__linksMobile",
+  // },
 ];

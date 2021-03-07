@@ -45,3 +45,55 @@
         box-shadow: 0 6px 20px 0 rgba(255, 255, 255, 0.5);
     }
 }
+
+@media only screen and (max-width:600px){
+    .seatList{
+        margin-bottom: 30px;
+        button{
+            background-color: $color-greekblue-1;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 10px;
+            margin: 2px;
+            cursor: pointer;
+            width: 5%;
+            border-radius: 5px;
+        }
+        &__thuong{
+            color: $color-greekblue-10;
+            border: 2px solid $color-greekblue-10;
+        }
+        &__vip{
+            color: $color-pink-1;
+            border: 2px solid $color-pink-1;
+        }
+        &__daDat{
+            color: $color-greekblue-3;
+            border: 2px solid $color-greekblue-3;
+            background-color: $color-greekblue-3 !important;
+        }
+        &__dangDat{
+            color: $color-greekblue-10;
+            background-color: $color-greekblue-10 !important;
+            border: 2px solid $color-greekblue-10;
+        }
+        &__chuThich{
+            margin-top: 10px;
+            margin-left: 40px;
+            color: $color-greekblue-10;
+            font-size: 10px;
+            span{
+                margin: 0 10px;
+            }
+        }
+        &__screen{
+            background-color: #bfbfbf;
+            width: 50%;
+            height: 5px;
+            margin: 10px 0 35px 110px;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px 0 rgba(255, 255, 255, 0.5);
+        }
+    }
+}

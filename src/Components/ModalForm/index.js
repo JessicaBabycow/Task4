@@ -14,7 +14,7 @@ const ModalForm = (props) => {
   const tk = JSON.parse(localStorage.getItem("User"));
 
   // props cần thiết để truyền vào modal
-  const { buttonOpenModal, componentModal, setForm, admin } = props;
+  const { buttonOpenModal, componentModal, setForm, admin, cName } = props;
 
   const [dropdownOpen, setOpen] = useState(false);
 
@@ -25,7 +25,11 @@ const ModalForm = (props) => {
       {!admin ? (
         <div>
           {tk ? (
-            <ButtonDropdown isOpen={dropdownOpen} toggle={toggle}>
+            <ButtonDropdown
+              className={cName}
+              isOpen={dropdownOpen}
+              toggle={toggle}
+            >
               <DropdownToggle caret>Hello {tk.taiKhoan}</DropdownToggle>
               <DropdownMenu>
                 <DropdownItem style={{ color: "#000" }}>
@@ -41,6 +45,7 @@ const ModalForm = (props) => {
             </ButtonDropdown>
           ) : (
             <Button
+              className={cName}
               onClick={() => {
                 setModal();
                 setForm("log in");

@@ -57,6 +57,7 @@ function HeaderHome(props) {
         titleModal={"Login"}
         buttonSubmitModal={"Login"}
         setForm={setForm}
+        cName={"headerHome__linksMobile1"}
         componentModal={
           form === "log in" ? (
             <LoginUserForm setForm={setForm} />

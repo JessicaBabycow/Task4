@@ -236,7 +236,7 @@ function UserPage(props) {
   return (
     <div className="userPage container">
       <div className="row">
-        <div className="userPage__title col-3">
+        <div className="userPage__title col-xs-12 col-lg-3">
           <div>
             <BsPeopleCircle className="userPage__icon" />
             <p>{dataUserLogin?.hoTen}</p>
@@ -258,7 +258,7 @@ function UserPage(props) {
             <a>Ticket booking history</a>
           </div>
         </div>
-        <div className="col-9">{handleInfo()}</div>
+        <div className="col-xs-12 col-lg-9">{handleInfo()}</div>
       </div>
     </div>
   );

@@ -58,3 +58,70 @@ canvas{
     width: 300px !important;
     height: 150px !important;
 }
+
+@media only screen and (max-width:600px){
+    .detailMovie{
+        &__left{
+            margin-left: 100px;
+        }
+        &__picture{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 150px;
+                border-radius: 5px;
+                height: 230px;
+                margin-right: 100px;
+            }
+        }
+        &__content{
+            color: #fff;
+            margin-top: 20px;
+            margin-right: 90px;
+            text-align: center;
+            p{
+                font-size: 15px;
+                margin-bottom: 5px;
+            }
+            &__name{
+                font-size: 15px;
+                font-weight: 700;
+            }
+            &__span{
+               background-color: $color-pink-2;
+               padding: 5px;
+               border-radius: 5px;
+               margin-right: 5px;
+               font-size: 15px;
+            }
+        }
+        &__trailerButton{
+            background-color: $color-greekblue-8;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: white;
+            margin-right: 5px;
+            transition: all 0.5s;
+            font-size: 12px;
+            &:hover{
+                background-color: $color-greekblue-5;
+            }
+        }
+        &__bookingButton{
+            background-color: $color-pink-2;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 5px;
+            color: white;
+            transition: all 0.5s;
+            font-size: 12px;
+            &:hover{
+                background-color: $color-pink-3;
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}

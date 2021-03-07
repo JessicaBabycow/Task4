@@ -5,3 +5,11 @@
         }
     }
 }
+
+@media only screen and (max-width:600px){
+    &__component{
+        &:first-child{
+            padding-top: 100px;
+        }
+    }
+}

@@ -48,6 +48,7 @@ function BookingPage(props) {
     }, 1000);
     return () => {
       // props.handleDatGhe(null, null);
+      xoaDanhSachVe();
       clearInterval(myInterval);
     };
   }, []);
@@ -75,13 +76,13 @@ function BookingPage(props) {
         </span>
       </h2>
       <div className="row">
-        <div className="col-8">
+        <div className="col-xs-12 col-lg-8">
           <SeatList
             bookingRoomDetail={bookingRoomDetail}
             addBookingSeatList={addBookingSeatList}
           />
         </div>
-        <div className="col-4">
+        <div className="col-xs-12 col-lg-4">
           <BookingMovieDetail
             bookingRoomDetail={bookingRoomDetail}
             danhSachVe={props.danhSachVe}
