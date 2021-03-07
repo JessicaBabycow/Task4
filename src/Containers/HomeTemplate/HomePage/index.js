@@ -71,15 +71,15 @@ function HomePage() {
       <div className="homePage__carouselSlider">
         <CarouselSlider />
       </div>
+      <div className="homePage__search">
+        <SearchHome
+          movieDetail={movieDetail}
+          layThongTinLichChieuPhimApi={layThongTinLichChieuPhimApi}
+          thongTinLichChieuPhim={thongTinLichChieuPhim}
+          setThongTinLichChieuPhim={setThongTinLichChieuPhim}
+        />
+      </div>
       <div className="container">
-        {/* <div className="homePage__component">
-          <SearchHome
-            movieDetail={movieDetail}
-            layThongTinLichChieuPhimApi={layThongTinLichChieuPhimApi}
-            thongTinLichChieuPhim={thongTinLichChieuPhim}
-            setThongTinLichChieuPhim={setThongTinLichChieuPhim}
-          />
-        </div> */}
         <div id="movies" className="homePage__component">
           <div
             style={{

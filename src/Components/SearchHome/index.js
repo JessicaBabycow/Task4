@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Select from "react-select";
 
 function SearchHome(props) {
+  const tk = JSON.parse(localStorage.getItem("User"));
+
   const {
     movieDetail,
     layThongTinLichChieuPhimApi,
@@ -17,7 +20,7 @@ function SearchHome(props) {
   const [dsMaRap, setDSMaRap] = useState([]);
   const [dsNgayXem, setDSNgayXem] = useState([]);
   const [dsGioXem, setDSGioXem] = useState([]);
-  const [dsMLC, setDSMCL] = useState([]);
+  const [dsMLC, setDSMCL] = useState(null);
 
   let option1 = [];
 
@@ -25,26 +28,26 @@ function SearchHome(props) {
     renderOption2();
     setDSNgayXem([]);
     setDSGioXem([]);
+    setDSMCL(null);
   }, [thongTinLichChieuPhim]);
 
   useEffect(() => {
     if (maRap) {
       renderOption3();
-      //   console.log(dsNgayXem);
+      setDSGioXem([]);
+      setDSMCL(null);
     }
   }, [maRap]);
 
   useEffect(() => {
     if (ngayXem) {
       renderOption4();
-      //   console.log(dsGioXem);
     }
   }, [ngayXem]);
 
   useEffect(() => {
     if (gioXem) {
       timMaLichChieu();
-      console.log(dsMLC);
     }
   }, [gioXem]);
 
@@ -104,42 +107,70 @@ function SearchHome(props) {
         if (i.maCumRap === maRap) {
           i?.lichChieuPhim.map((ngay) => {
             if (ngay.ngayChieuGioChieu === gioXem) {
-              dsMa.push({
-                maLichChieu: ngay.maLichChieu,
-              });
+              setDSMCL(ngay.maLichChieu);
             }
           });
         }
       });
     });
-    setDSMCL(dsMa);
   };
+
   return (
     <div className="searchHome">
-      <Select
-        options={option1}
-        onChange={(value) => {
-          layThongTinLichChieuPhimApi(value.value, setThongTinLichChieuPhim);
-        }}
-      />
-      <Select
-        options={dsMaRap}
-        onChange={(value) => {
-          setMaRap(value.value);
-        }}
-      />
-      <Select
-        options={dsNgayXem}
-        onChange={(value) => {
-          setNgayXem(value.value);
-        }}
-      />
-      <Select
-        options={dsGioXem}
-        onChange={(value) => {
-          setGioXem(value.value);
-        }}
-      />
+      <div className="searchHome__title">What are you looking for ?</div>
+      <div className="searchHome__list">
+        <Select
+          className="searchHome__list__select"
+          options={option1}
+          onChange={(value) => {
+            layThongTinLichChieuPhimApi(value.value, setThongTinLichChieuPhim);
+          }}
+        />
+        <Select
+          className="searchHome__list__select"
+          options={dsMaRap}
+          onChange={(value) => {
+            setMaRap(value.value);
+          }}
+        />
+        <Select
+          className="searchHome__list__select"
+          options={dsNgayXem}
+          onChange={(value) => {
+            setNgayXem(value.value);
+          }}
+        />
+        <Select
+          className="searchHome__list__select"
+          options={dsGioXem}
+          onChange={(value) => {
+            setGioXem(value.value);
+          }}
+        />
+        {dsMLC ? (
+          <button
+            className="searchHome__list__button"
+            onClick={() => {
+              console.log(dsMLC);
+            }}
+          >
+            <Link
+              to={tk ? `/booking/${dsMLC}` : ""}
+              onClick={() => {
+                if (!tk) {
+                  alert("Please sign in to book tickets !");
+                }
+              }}
+            >
+              Booking
+            </Link>
+          </button>
+        ) : (
+          <button className="searchHome__list__button" disabled>
+            Booking
+          </button>
+        )}
+      </div>
     </div>
   );
 }
