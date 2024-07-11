@@ -1,15 +1,15 @@
-.detailPage{
-    &__component{
-        &:first-child{
-            padding-top: 150px;
-        }
+.detailPage {
+  &__component {
+    &:first-child {
+      padding-top: 150px;
     }
+  }
 }
 
-@media only screen and (max-width:600px){
-    &__component{
-        &:first-child{
-            padding-top: 100px;
-        }
-    }
-}
+// @media only screen and (max-width:600px){
+//     &__component{
+//         &:first-child{
+//             padding-top: 100px;
+//         }
+//     }
+// }
